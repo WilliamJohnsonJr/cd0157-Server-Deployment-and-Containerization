@@ -9,6 +9,13 @@ data:
       - system:masters
       rolearn: arn:aws:iam::129339633208:role/UdacityFlaskDeployCBKubectlRole
       username: build
+  mapUsers: |
+    - userarn: arn:aws:iam::129339633208:user/Admin
+      username: Admin
+      groups:
+        - system:masters
+  mapAccounts: |
+    - "129339633208"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2025-05-27T02:01:14Z"
