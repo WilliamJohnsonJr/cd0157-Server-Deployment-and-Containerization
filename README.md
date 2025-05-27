@@ -2,7 +2,7 @@ Used in Course 5: Server Deployment and Containerization of the Udacity Full Sta
 
 All Python references had to be changed to Python 3.9 to be compatible with AWS Lambda.
 
-Role expires after 1 hour.
+Role expires after 1 hour. Add "AdministratorAccess" to UdacityFlaskDeployCBKubectlRole in AWS console.
 
 Original README below.
 
