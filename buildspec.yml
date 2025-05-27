@@ -30,8 +30,6 @@ phases:
       - python --version
       - echo 'export PATH=$PWD/:$PATH' >> $HOME/.bashrc
       - echo `kubectl version --short --client`
-      - echo "Checking kubectl ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-      - echo `kubectl auth can-i get nodes`
       - python -m pip install --upgrade --force pip
       - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add
       # Update GPG key 
@@ -63,3 +61,5 @@ artifacts:
 env:
   parameter-store:         
     JWT_SECRET: JWT_SECRET
+    AWS_ACCESS_KEY_ID: ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: SECRET_ACCESS_KEY
