@@ -30,6 +30,7 @@ phases:
       - python --version
       - echo 'export PATH=$PWD/:$PATH' >> $HOME/.bashrc
       - echo `kubectl version --short --client`
+      - echo `$SUPER_DUPER_SECRET ~~~~~~~~~~~~~~~~~~~~~~`
       - python -m pip install --upgrade --force pip
       - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add
       # Update GPG key 
@@ -63,3 +64,4 @@ env:
     JWT_SECRET: JWT_SECRET
     AWS_ACCESS_KEY_ID: ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY: SECRET_ACCESS_KEY
+    SUPER_DUPER_SECRET: SUPER_SECRET
