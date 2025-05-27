@@ -5,6 +5,9 @@ All Python references had to be changed to Python 3.9 to be compatible with AWS 
 Role expires after 1 hour. Add "AdministratorAccess" to UdacityFlaskDeployCBKubectlRole in AWS console.
 Grant IAM Users access to k8s with EKS Access Entries instead of the legacy access config approach.
 
+Example:
+`aws eks create-access-entry --cluster-name simple-jwt-api --principal-arn arn:aws:iam::111122223333:role/UdacityFlaskDeployCBKubectlRole --type STANDARD`
+
 Original README below.
 
 # Deploying a Flask API
