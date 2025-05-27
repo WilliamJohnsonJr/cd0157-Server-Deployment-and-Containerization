@@ -1,3 +1,9 @@
+Used in Course 5: Server Deployment and Containerization of the Udacity Full Stack Developer nanodegree.
+
+All Python references had to be changed to Python 3.9 to be compatible with AWS Lambda.
+
+Original README below.
+
 # Deploying a Flask API
 
 This is the project starter repo for the course Server Deployment, Containerization, and Testing.
